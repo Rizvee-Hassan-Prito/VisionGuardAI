@@ -51,7 +51,7 @@ import torch._dynamo
     # return response
     
 # def bitnet_Colab(prompt):
-#     client = Client("https://d9da784f2bff68fb65.gradio.live",hf_token='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')
+#     client = Client("https://d9da784f2bff68fb65.gradio.live",hf_token='')
 #     result = client.predict(
 #         prompt=prompt,
 #         api_name="/predict"
@@ -63,7 +63,7 @@ import torch._dynamo
 from groq import Groq
 
 client = Groq(
-    api_key="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",
+    api_key="",
 )
 def llama(prompt):
     chat_completion = client.chat.completions.create(
@@ -91,7 +91,7 @@ def llama(prompt):
 # # Your Hugging Face API token
 
 # def hugf_Model(prompt):
-#     API_TOKEN = "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"
+#     API_TOKEN = ""
 #     messages = [
 #         {
 #             "role": "user",
